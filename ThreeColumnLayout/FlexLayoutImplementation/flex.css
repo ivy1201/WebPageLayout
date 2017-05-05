@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 600px; }
+
+.header,
+.footer {
+  flex: 0 0 50px;
+  background: yellow; }
+
+.main {
+  display: flex;
+  flex: 1; }
+
+.content {
+  flex: 1;
+  background: blue; }
+
+.left,
+.right {
+  flex: 0 0 150px;
+  background: red; }
+
+/*# sourceMappingURL=flex.css.map */

@@ -1,0 +1,50 @@
+
+vertical-align{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hg{
+	display:grid;
+	grid-template-rows: 100px 1fr 30px;
+	grid-template-columns:150px 1fr 150px;
+	grid-template-areas: "header header header"
+	                     "nav content ads"
+	                     "footer footer footer";
+	height: 100vh;
+}
+.header{
+	@extend vertical-align;
+    grid-area: header;
+    background-color: red;
+}
+.nav{
+	@extend vertical-align;
+    grid-area: nav;
+    background-color: blue;
+}
+.content{
+	@extend vertical-align;
+	grid-area: content;
+	background-color: yellow;
+}
+.ads{
+	@extend vertical-align;
+	grid-area: ads;
+	background-color: blue;
+}
+.footer{
+	@extend vertical-align;
+	grid-area:footer;
+	background-color: purple;
+}
+@media screen and (max-width: 600px) {
+    .hg {
+    	grid-template-columns: 100%;
+        grid-template-areas: "header"
+                             "nav"
+                             "content"
+                             "ads"
+                             "footer";
+    }
+}	

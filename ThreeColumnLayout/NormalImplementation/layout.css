@@ -1,0 +1,41 @@
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: red; }
+
+.footer {
+  height: 30px;
+  background-color: yellow;
+  clear: both;
+  width: 100%; }
+
+.nav {
+  height: inherit;
+  position: relative;
+  left: -150px;
+  float: left;
+  width: 150px;
+  margin-left: -100%;
+  background-color: blue; }
+
+.content {
+  right: -150px;
+  height: inherit;
+  width: 100%;
+  float: left;
+  background-color: purple;
+  overflow: auto; }
+
+.ads {
+  position: relative;
+  height: inherit;
+  float: left;
+  width: 150px;
+  margin-right: -150px;
+  background-color: blue; }
+
+.main {
+  height: 200px;
+  padding: 0 150px; }
+
+/*# sourceMappingURL=layout.css.map */
